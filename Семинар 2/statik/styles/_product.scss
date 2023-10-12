@@ -1,0 +1,88 @@
+// вторая шапка (product)
+.top-head {
+    background-color: #F8F3F4;
+    position: relative;
+
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        height: 148px;
+    }
+
+    &__box h1 {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+        color: $main_color;
+    }
+
+    &__breadcrumbs {
+        list-style-type: none;
+
+        display: flex;
+        gap: 10px;
+
+        color: #636363;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+
+    &__breadcrumbs a:hover {
+        color: $main_color;
+    }
+
+    &__li:not(:last-child):after {
+        content: '\/';
+        padding-left: 10px;
+    }
+
+    &__li:last-child {
+        font-weight: bold;
+        color: #fa008e;
+    }
+}
+
+.breadcrumbs {
+    display: flex;
+    justify-content: center;
+    padding-top: 48px;
+
+    &__box {
+        border: 1px solid rgba(235, 235, 235, 1);
+        border-radius: 5px;
+
+        padding: 12px 15px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        & svg {
+            cursor: pointer;
+        }
+
+        & svg:hover path {
+            fill: $main_color;
+        }
+    }
+
+    &__items {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__link {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        color: #C4C4C4;
+
+        &:hover {
+            color: $main_color;
+        }
+    }
+}

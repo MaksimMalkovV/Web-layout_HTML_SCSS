@@ -1,0 +1,42 @@
+.footer {
+    background: $color_box;
+
+    min-height: 79px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    &__text {
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FBFBFB;
+    }
+
+    &__items {
+        display: flex;
+        gap: 7.29px;
+
+        &__item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 32px;
+            height: 32px;
+            background-color: white;
+        }
+
+        &__item:hover {
+            background-color: #F16D7F;
+        }
+
+        &__item:hover path {
+            fill: white;
+        }
+    }
+}

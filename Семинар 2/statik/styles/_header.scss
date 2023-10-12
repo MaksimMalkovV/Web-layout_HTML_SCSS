@@ -1,0 +1,37 @@
+// шапка (index, product)
+.header {
+    min-height: 75px;
+    max-width: 1600px;
+
+    background: $color_box;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    &__left {
+        display: flex;
+        align-items: baseline;
+        gap: 41px;
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+        gap: 33px;
+    }
+}
+
+label {
+    cursor: pointer;
+}
+
+#header__check {
+    display: none;
+}
+
+#header__check:checked~.mobile-menu {
+    display: none;
+}
